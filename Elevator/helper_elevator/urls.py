@@ -8,5 +8,6 @@ urlpatterns = [
     path("get_elevator_request/<int:elevator_id>" , Main.get_all_request_of_elevator , name ="get_all_request_of_elevator"),
     path("next_destibation/<int:elevator_id>", Main.get_next_destination, name = 'get_next_destination'),
     path("direction/<int:elevator_id>", Main.get_direction, name = 'get_direction'),
-    path("elevator/<int:elevator_id>" ,Main.process_request , name ='process_request')
+    path("elevator/<int:elevator_id>" ,Main.process_request , name ='process_request'),
+    path("update_condition" , Main.update_elevator_condition ,name ="update_elevator_condition)
 ]
